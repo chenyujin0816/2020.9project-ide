@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>704</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="5,2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,6">
+        <item>
+         <widget class="QTreeWidget" name="treeWidget">
+          <column>
+           <property name="text">
+            <string>文件名</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>文件路径</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>No.</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="textEdit"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="tableWidget">
+        <column>
+         <property name="text">
+          <string>行</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>列</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>单元</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>信息</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>851</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="geometry">
+     <rect>
+      <x>339</x>
+      <y>116</y>
+      <width>137</width>
+      <height>168</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="action_n"/>
+    <addaction name="action_op"/>
+    <addaction name="action_save"/>
+    <addaction name="action_sava"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_edit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_redo"/>
+    <addaction name="action_reg"/>
+    <addaction name="action_cut"/>
+    <addaction name="action_cpy"/>
+    <addaction name="action_pst"/>
+    <addaction name="action_sal"/>
+    <addaction name="action_sdfs"/>
+    <addaction name="action_cann"/>
+    <addaction name="action_ind"/>
+    <addaction name="action_cind"/>
+   </widget>
+   <widget class="QMenu" name="menu_search">
+    <property name="title">
+     <string>搜索</string>
+    </property>
+    <addaction name="action_srh"/>
+    <addaction name="action_display"/>
+   </widget>
+   <widget class="QMenu" name="menu_view">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="action_fs"/>
+   </widget>
+   <widget class="QMenu" name="menu_run">
+    <property name="title">
+     <string>运行</string>
+    </property>
+    <addaction name="action_edit"/>
+    <addaction name="action_run"/>
+    <addaction name="action_cpr"/>
+   </widget>
+   <widget class="QMenu" name="menu_aboutus">
+    <property name="title">
+     <string>关于我们</string>
+    </property>
+    <addaction name="actioncmc"/>
+    <addaction name="actionyyf"/>
+    <addaction name="actionjcy"/>
+    <addaction name="actionyjr"/>
+    <addaction name="actionmmy"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_edit"/>
+   <addaction name="menu_search"/>
+   <addaction name="menu_view"/>
+   <addaction name="menu_run"/>
+   <addaction name="menu_aboutus"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_n">
+   <property name="text">
+    <string>新建</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_op">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_sava">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="action_redo">
+   <property name="text">
+    <string>重做</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_reg">
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="action_cut">
+   <property name="text">
+    <string>剪切</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_cpy">
+   <property name="text">
+    <string>复制</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_pst">
+   <property name="text">
+    <string>粘贴</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_sal">
+   <property name="text">
+    <string>全选</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_sdfs">
+   <property name="text">
+    <string>注释</string>
+   </property>
+  </action>
+  <action name="action_cann">
+   <property name="text">
+    <string>取消注释</string>
+   </property>
+  </action>
+  <action name="action_ind">
+   <property name="text">
+    <string>缩进</string>
+   </property>
+  </action>
+  <action name="action_cind">
+   <property name="text">
+    <string>取消缩进</string>
+   </property>
+  </action>
+  <action name="action_srh">
+   <property name="text">
+    <string>搜索</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_display">
+   <property name="text">
+    <string>替换</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="action_fs">
+   <property name="text">
+    <string>全屏</string>
+   </property>
+  </action>
+  <action name="action_edit">
+   <property name="text">
+    <string>编译</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string/>
+   </property>
+  </action>
+  <action name="actionyunxing">
+   <property name="text">
+    <string>yunxing</string>
+   </property>
+  </action>
+  <action name="action_run">
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </action>
+  <action name="action_cpr">
+   <property name="text">
+    <string>编译运行</string>
+   </property>
+  </action>
+  <action name="actioncmc">
+   <property name="text">
+    <string>陈明灿</string>
+   </property>
+  </action>
+  <action name="actionyyf">
+   <property name="text">
+    <string>杨逸飞</string>
+   </property>
+  </action>
+  <action name="actionjcy">
+   <property name="text">
+    <string>金辰雨</string>
+   </property>
+  </action>
+  <action name="actionyjr">
+   <property name="text">
+    <string>闫憬睿</string>
+   </property>
+  </action>
+  <action name="actionmmy">
+   <property name="text">
+    <string>马明阳</string>
+   </property>
+  </action>
+  <action name="actionquanping_2">
+   <property name="text">
+    <string>quanping</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
